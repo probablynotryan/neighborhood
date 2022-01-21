@@ -1,24 +1,29 @@
 // Business Logic
 
-function beepBoop(num) {
-  if (num === 0) {
-    return num;
-  } else if (num === 1) {
-    return "Beep!";
-  } else if (num === 2) {
-    return "Boop!";
-  } else if (num === 3) {
-    return "Will you be my neighbor?";
-  } else {
-    return num;
-  }
+function beepBoop(inputArray) {
+  responseArray = [];
+  inputArray.forEach(function(element) {
+    if (element === 0) {
+      return responseArray.push(0);
+    } else if (element === 1) {
+      responseArray.push("Beep!");
+    } else if (element === 2) {
+      responseArray.push("Boop!");
+    } else if (element === 3) {
+      responseArray.push("Will you be my neighbor?");
+    } else {
+    }
+  });
+  return responseArray;
 }
 
 // UI Logic
 $(document).ready(function() {
   $("#neighborCheck").submit(function(event) {
     event.preventDefault();
-    let result = beepBoop(2);
+
+    let userInput = [1, 1];
+    let result = beepBoop(userInput);
 
     $("#resultSpan").text(result);
   });
