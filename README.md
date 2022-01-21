@@ -28,7 +28,6 @@ Describe: beepBoop()
 Test: "It should return an array with 'Beep!', 'Beep!' if an array of [1, 1] is submitted."
 
 Let userInput = [1, 1];
-
 Code: beepBoop(userInput);
 
 Expected Output: "Beep!", "Beep!"
