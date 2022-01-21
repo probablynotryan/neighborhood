@@ -26,6 +26,9 @@ li {
 p {
   color: gray;
 }
+p#results {
+  color: black;
+}
 a {
   text-decoration: none;
   color: red;
@@ -51,4 +54,5 @@ a:hover {
   padding: 20px;
   border: solid rgb(189, 189, 189);
   border-width: 1px;
+  display: none;
 }
