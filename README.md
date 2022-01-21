@@ -14,17 +14,20 @@
 * jQuery
 
 ## Description
-
+This webpage takes a number given by the user and returns a range of numbers ascending to the user's number, replacing any number containing "1", "2", or "3" with a message. Starting with highest priority is "Will you be my neighbor?" when "3" is found in the number, "Boop!" when "2" is found, and "Beep!" when a "1" is found.
 
 
 ### Setup/Installation Requirements
+* Git clone this repository to your computer and run "index.html" in a supported browser.
+* Enter a number between 0 and 999 the box indicating a number input and press "Submit".
+* Below your submission, a window will populate with a range counting up to your number, with specified numbers substituted with messages.
+* Enter another number to see a different output!
 
-
- ##### Tests
-
+ #### Tests 
+ 
  Describe: beepBoop()
 
-Test: "It should return a string of aforementioned substituted strings and at the end, should it end on a number, end with a period."
+Test: "It should return a string ending with period if the count ends on a number."
 
 let userInput = 54;
 
@@ -33,7 +36,7 @@ Code: beepBoop(userInput);
 Expected Output: "..., 50, Beep! Boop! Will you be my neighbor? 54."
 
 ---
-Test: "It should return a string of "Will you be my neighbor" when the returned range has a "3" in it."
+Test: "It should return a string within an array of "Will you be my neighbor?" when the returned range has a "3" in it."
 
 let userInput = 14;
 
@@ -72,10 +75,6 @@ Expected Output: "0"
 ## Known Bugs
 
 None reported.
-
-## Notes
-
-None to report.
   
 
 ## License
