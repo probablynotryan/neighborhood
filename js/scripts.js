@@ -9,6 +9,8 @@ function beepBoop(inputNumber) {
       responseArray.push("Boop!");
     } else if (i === 1) {
       responseArray.push("Beep!");
+    } else if (i == inputNumber) {
+      responseArray.push(i + ".");
     } else if (i < 10) {
       responseArray.push(i + ",");
     } else if (i > 9) {
@@ -20,23 +22,31 @@ function beepBoop(inputNumber) {
       } else if (bigNumber.includes('1')) {
         responseArray.push("Beep!");
       } else {
-        responseArray.push(i + ",");
+        if (i == inputNumber){
+          responseArray.push(i + ".");
+        } else {
+          responseArray.push(i + ",");
+        }
       }
     } else {
-      responseArray.push(i + ",")
+      if (i == inputNumber){
+        responseArray.push(i + ".");
+      } else {
+        responseArray.push(i + ",");
+      }
     }
   };
   return responseArray.join(" ");
 }
 
 // UI Logic
+
 $(document).ready(function() {
   $("#neighborCheck").submit(function(event) {
     event.preventDefault();
-    $("#resultsWindow").show();
     let userInput = $("#userInputForm").val();
     let result = beepBoop(userInput);
-
     $("#results").text(result);
+    $("#resultsWindow").show();
   });
 });
