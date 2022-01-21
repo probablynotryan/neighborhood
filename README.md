@@ -15,15 +15,24 @@
 
 ## Description
 
-//
+
 
 ### Setup/Installation Requirements
 
-//
 
- #### Tests
+ ##### Tests
+
  Describe: beepBoop()
 
+Test: "It should return a string of aforementioned substituted strings and at the end, should it end on a number, end with a period."
+
+let userInput = 54;
+
+Code: beepBoop(userInput);
+
+Expected Output: "..., 50, Beep! Boop! Will you be my neighbor? 54."
+
+---
 Test: "It should return a string of "Will you be my neighbor" when the returned range has a "3" in it."
 
 let userInput = 14;
