@@ -25,13 +25,13 @@ For example, if the user inputted "2, 52, 13, 0", the output would be "Beep!, Be
  #### Tests
 Describe: beepBoop()
 
-Test: "It should return an array with 'Beep!', 'Beep!' if an array of [1, 1] is submitted."
+Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 3 is submitted."
 
-Let userInput = [1, 1];
+let userInput = 4;
 
 Code: beepBoop(userInput);
 
-Expected Output: "Beep!", "Beep!"
+Expected Output: "0, Beep!, Boop!, Will you be my neighbor?, 4"
 
 ---
 Describe: beepBoop()
