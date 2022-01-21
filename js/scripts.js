@@ -3,7 +3,6 @@
 function beepBoop(inputNumber) {
   let responseArray = [];
   for (let i = 0; i <= inputNumber; i++){
-    console.log('test')
       if (i === 3) {
       responseArray.push("Will you be my neighbor?");
     } else if (i === 2) {
@@ -35,7 +34,7 @@ $(document).ready(function() {
   $("#neighborCheck").submit(function(event) {
     event.preventDefault();
 
-    let userInput = 14;
+    let userInput = $("#userInputForm").val();
     let result = beepBoop(userInput);
 
     $("#resultSpan").text(result);
