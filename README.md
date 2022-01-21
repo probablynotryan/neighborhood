@@ -28,7 +28,7 @@ let userInput = 14;
 
 Code: beepBoop(userInput);
 
-Expected Output: "..., 11, 12, "Will you be my neighbor", 14"
+Expected Output: "..., 8, 9, "Beep!", "Beep!", "Boop!", "Will you be my neighbor", "Beep!"
 
 ---
 Describe: beepBoop()
