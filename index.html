@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
@@ -11,14 +16,34 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <form type="number" id="neighborCheck">
-      <input id="userInputForm" type="number" max="300" required></input>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <div class="container" id="looklikeepi">
+    <h1> Arrays and Looping </h1>
+    <div class="panel">
+      <h5><strong>Project</strong></h5>
+    </div>
+      <div class="headerbox">
+        <h3>Week Three Project</h3>
+        <hr>
+        <p>Before you begin, please take a look at how awesome this rebuild attempt of the <a href="#">Epicenter website</a> is. (No that link doesn't actually take you anywhere. Cool kids only.)</p>
+        <h3>The Actual Project</h3>
+        <hr>
+        <h4>Mr. Roboger's Neighborhood</h4>
+        <p>Here is a web application that takes a number from the user and returns a range of numbers from 0 to the user inputted number with the following substitutions made within the returned range: </p>
+        <ul>
+          <li>Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"</li>
+          <li>Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"</li>
+          <li>Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"</li>
+        </ul>
+        <p>Don't believe me? <span class="checkitout">Check it out below. </span></p>
+        <form type="number" id="neighborCheck">
+          <label for="number">Enter a number here:</label>
+          <input id="userInputForm" type="number" max="999" required></input>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
   <div class="container" id="resultsWindow">
-    <p id="results">The output was <span id = "resultSpan"></span></p>
+    <p id="results"></p>
+  </div>
   </div>
 </body>
 </html>

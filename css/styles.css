@@ -1,3 +1,54 @@
-.container {
+#looklikeepi {
   margin-top: 20px;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+.checkitout {
+  color: red;
+  font-weight: bold;;
+}
+li {
+  color: gray;
+}
+p {
+  color: gray;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.panel {
+  border: solid rgb(189, 189, 189);
+  border-width: 1px;
+  padding: 15px;
+  padding-bottom: 10px;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 0;
+}
+.headerbox{
+  padding: 20px;
+  border: solid rgb(189, 189, 189);
+  border-width: 1px;
+}
+#resultsWindow {
+  padding: 20px;
+  border: solid rgb(189, 189, 189);
+  border-width: 1px;
 }

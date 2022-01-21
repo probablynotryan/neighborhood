@@ -37,6 +37,6 @@ $(document).ready(function() {
     let userInput = $("#userInputForm").val();
     let result = beepBoop(userInput);
 
-    $("#resultSpan").text(result);
+    $("#results").text(result);
   });
 });
