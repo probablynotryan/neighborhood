@@ -2,20 +2,24 @@
 
 function beepBoop(num) {
   if (num === 0) {
-    console.log('Code ran')
-    return "0";
+    return num;
+  } else if (num === 1) {
+    return "Beep!";
+  } else if (num === 2) {
+    return "Boop!";
+  } else if (num === 3) {
+    return "Will you be my neighbor?";
+  } else {
+    return num;
   }
 }
 
 // UI Logic
 $(document).ready(function() {
-  console.log('ready')
   $("#neighborCheck").submit(function(event) {
     event.preventDefault();
-    console.log('button');
-    let result = beepBoop(0);
+    let result = beepBoop(2);
 
     $("#resultSpan").text(result);
-    console.log(result);
   });
 });
