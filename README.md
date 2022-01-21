@@ -20,6 +20,17 @@
 //
 
  #### Tests
+ Describe: beepBoop()
+
+Test: "It should return a string of "Will you be my neighbor" when the returned range has a "3" in it."
+
+let userInput = 14;
+
+Code: beepBoop(userInput);
+
+Expected Output: "..., 11, 12, "Will you be my neighbor", 14"
+
+---
 Describe: beepBoop()
 
 Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 4 is submitted."
