@@ -10,6 +10,8 @@
 * HTML 5
 * CSS 3
 * Javascript
+* Bootstrap CSS
+* jQuery
 
 ## Description
 
@@ -31,7 +33,6 @@ Code: beepBoop(userInput);
 Expected Output: "..., 8, 9, "Beep!", "Beep!", "Boop!", "Will you be my neighbor", "Beep!"
 
 ---
-Describe: beepBoop()
 
 Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 4 is submitted."
 
@@ -42,7 +43,6 @@ Code: beepBoop(userInput);
 Expected Output: "0, Beep!, Boop!, Will you be my neighbor?, 4"
 
 ---
-Describe: beepBoop()
 
 Test: "It should return an array with a 'Will you be my neighbor?' if the number '3' is submitted."
 
@@ -51,7 +51,6 @@ Code: beepBoop(3);
 Expected Output: "Will you be my neighbor?"
 
 ---
-Describe: beepBoop()
 
 Test: "It should return an array with a 0 if the number 0 is submitted".
 
