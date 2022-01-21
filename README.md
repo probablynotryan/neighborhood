@@ -28,6 +28,7 @@ Describe: beepBoop()
 Test: "It should return an array with a 'Beep!' if the number '3' is submitted."
 
 Code: beepBoop(3);
+
 Expected Output: Will you be my neighbor?
 
 ---
@@ -36,6 +37,7 @@ Describe: beepBoop()
 Test: "It should return an array with a 0 if the number 0 is submitted".
 
 Code: beepBoop(0);
+
 Expected Output: 0
 
 ---
