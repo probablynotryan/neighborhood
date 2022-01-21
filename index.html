@@ -34,14 +34,15 @@
           <li>Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"</li>
           <li>Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"</li>
         </ul>
-        <p>Don't believe me? <span class="checkitout">Check it out below. </span></p>
+        <p><span class="checkitout">Check it out below. </span> (Please, no humongous numbers or letters.)</p>
         <form type="number" id="neighborCheck">
           <label for="number">Enter a number here:</label>
-          <input id="userInputForm" type="number" max="999" required></input>
+          <input id="userInputForm" type="number" max="999" min="0" required></input>
           <button type="submit">Submit</button>
         </form>
       </div>
   <div class="container" id="resultsWindow">
+    <p>And here comes the response:</p>
     <p id="results"></p>
   </div>
   </div>
