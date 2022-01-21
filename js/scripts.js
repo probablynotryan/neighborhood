@@ -1,19 +1,33 @@
 // Business Logic
 
-function beepBoop(inputArray) {
-  responseArray = [];
-  inputArray.forEach(function(element) {
-    if (element === 0) {
-      return responseArray.push(0);
-    } else if (element === 3) {
+function beepBoop(inputNumber) {
+  let responseArray = [];
+  for (let i = 0; i <= inputNumber; i++){
+    console.log('test')
+      if (i === 3) {
       responseArray.push("Will you be my neighbor?");
-    } else if (element === 2) {
+    } else if (i === 2) {
       responseArray.push("Boop!");
-    } else if (element === 1) {
+    } else if (i === 1) {
       responseArray.push("Beep!");
-    } 
-  });
-  return responseArray;
+    } else if (i < 10) {
+      responseArray.push(i);
+    } else if (i > 9) {
+      let bigNumber = i.toString().split('');
+      if (bigNumber.includes('3')) {
+        responseArray.push("Will you be my neighbor?");
+      } else if (bigNumber.includes('2')) {
+        responseArray.push("Boop!");
+      } else if (bigNumber.includes('1')) {
+        responseArray.push("Beep!");
+      } else {
+        responseArray.push(i);
+      }
+    } else {
+      responseArray.push(i)
+    }
+  };
+  return responseArray.join(", ");
 }
 
 // UI Logic
@@ -21,7 +35,7 @@ $(document).ready(function() {
   $("#neighborCheck").submit(function(event) {
     event.preventDefault();
 
-    let userInput = [1, 1];
+    let userInput = 14;
     let result = beepBoop(userInput);
 
     $("#resultSpan").text(result);
