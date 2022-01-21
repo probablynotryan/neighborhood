@@ -5,14 +5,13 @@ function beepBoop(inputArray) {
   inputArray.forEach(function(element) {
     if (element === 0) {
       return responseArray.push(0);
-    } else if (element === 1) {
-      responseArray.push("Beep!");
-    } else if (element === 2) {
-      responseArray.push("Boop!");
     } else if (element === 3) {
       responseArray.push("Will you be my neighbor?");
-    } else {
-    }
+    } else if (element === 2) {
+      responseArray.push("Boop!");
+    } else if (element === 1) {
+      responseArray.push("Beep!");
+    } 
   });
   return responseArray;
 }
