@@ -13,19 +13,16 @@
 
 ## Description
 
-This web application takes a number from the user and returns a range of numbers from 0 to the user's inputted number with some substitutions made within a specified range. If a number with a "1" in it, it will return "Beep!", if a "2" is in it, "Boop!" will replace the prior string. If there is a "3" in the number, "Won't you be my neighbor?" as a string will replace any string previously there. Otherwise, the number in the range will be returned.
-
-For example, if the user inputted "2, 52, 13, 0", the output would be "Beep!, Beep!, Won't you be my neighbor?, 0".
+//
 
 ### Setup/Installation Requirements
 
-* git clone this repository to your computer.
-* Run / open "index.html" in a supported browser.
- 
+//
+
  #### Tests
 Describe: beepBoop()
 
-Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 3 is submitted."
+Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 4 is submitted."
 
 let userInput = 4;
 
