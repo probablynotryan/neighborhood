@@ -7,10 +7,10 @@
 
 ## Technologies Used
 
-* HTML 5
-* CSS 3
+* HTML
+* CSS
 * Javascript
-* Bootstrap CSS
+* Bootstrap
 * jQuery
 
 ## Description
@@ -23,7 +23,7 @@ This webpage takes a number given by the user and returns a range of numbers asc
 * Below your submission, a window will populate with a range counting up to your number, with specified numbers substituted with messages.
 * Enter another number to see a different output!
 
- #### Tests 
+ ### Tests 
  
  Describe: beepBoop()
 
@@ -42,17 +42,17 @@ let userInput = 14;
 
 Code: beepBoop(userInput);
 
-Expected Output: "..., 8, 9, "Beep!", "Beep!", "Boop!", "Will you be my neighbor", "Beep!"
+Expected Output: '..., 8, 9, "Beep!", "Beep!", "Boop!", "Will you be my neighbor", "Beep!"'
 
 ---
 
-Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 4 is submitted."
+Test: "It should return an array of "0", "Beep!", "Boop!", "Will you be my neighbor?", "4" when the number 4 is submitted by the user."
 
 let userInput = 4;
 
 Code: beepBoop(userInput);
 
-Expected Output: "0, Beep!, Boop!, Will you be my neighbor?, 4"
+Expected Output: '"0", "Beep!", "Boop!", "Will you be my neighbor?", "4"'
 
 ---
 

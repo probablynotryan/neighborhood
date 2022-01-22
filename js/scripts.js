@@ -17,9 +17,9 @@ function beepBoop(inputNumber) {
         responseArray.push(i + ",");
       }
     }
-  };
+  }
   return responseArray.join(" ");
-}
+};
 
 // UI Logic
 
