@@ -1,5 +1,10 @@
-#looklikeepi {
-  margin-top: 20px;
+a {
+  text-decoration: none;
+  color: red;
+}
+a:hover {
+  text-decoration: underline;
+  color: red;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -16,10 +21,6 @@ h4 {
 h5 {
   font-size: 16px;
 }
-.checkitout {
-  color: red;
-  font-weight: bold;;
-}
 li {
   color: gray;
 }
@@ -29,13 +30,17 @@ p {
 p#results {
   color: black;
 }
-a {
-  text-decoration: none;
+.checkitout {
   color: red;
+  font-weight: bold;;
 }
-a:hover {
-  text-decoration: underline;
-  color: red;
+.container {
+  margin-bottom: 20px;
+}
+.headerbox{
+  padding: 20px;
+  border: solid rgb(189, 189, 189);
+  border-width: 1px;
 }
 .subhead{
   border: solid rgb(189, 189, 189);
@@ -45,17 +50,12 @@ a:hover {
   background-color: rgb(247, 247, 247);
   margin-bottom: 0;
 }
-.headerbox{
-  padding: 20px;
-  border: solid rgb(189, 189, 189);
-  border-width: 1px;
+#looklikeepi {
+  margin-top: 20px;
 }
 #resultsWindow {
   padding: 20px;
   border: solid rgb(189, 189, 189);
   border-width: 1px;
   display: none;
-}
-.container {
-  margin-bottom: 20px;
 }
